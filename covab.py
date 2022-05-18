@@ -29,7 +29,11 @@ st.subheader('Data')
 st.text('(Taft et al., 2021)')
 st.write(df5)
 
-
+#########################
+from PIL import Image
+image = Image.open('model.jpg')
+st.subheader('Original ML models')
+st.image(image)
 #########################
 
 from PIL import Image
