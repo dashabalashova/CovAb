@@ -42,9 +42,9 @@ st.image(image, caption='(Nadav Brandes et al., 2021) ProteinBERT’s architectu
 
 #########################
 
-d1 = {'test_loss': 0.4330556094646454, 'test_accuracy': 0.8322731837964513, 'test_f1': 0.8404966571155682, 'test_precision': 0.7923169267707083, 'test_recall': 0.8949152542372881, 'test_runtime': 167.9181, 'test_samples_per_second': 17.788, 'test_steps_per_second': 1.781}
-d2 = {'test_loss': 0.4330556094646454, 'test_accuracy': 0.8322731837964513, 'test_f1': 0.8404966571155682, 'test_precision': 0.7923169267707083, 'test_recall': 0.8949152542372881, 'test_runtime': 167.9181, 'test_samples_per_second': 17.788, 'test_steps_per_second': 1.781}
-d3 = {'test_loss': 0.4330556094646454, 'test_accuracy': 0.8322731837964513, 'test_f1': 0.8404966571155682, 'test_precision': 0.7923169267707083, 'test_recall': 0.8949152542372881, 'test_runtime': 167.9181, 'test_samples_per_second': 17.788, 'test_steps_per_second': 1.781}
+d1 = {'test_loss': 0.4495324492454529, 'test_accuracy': 0.8339120370370371, 'test_f1': 0.8371037055055541, 'test_precision': 0.8219745222929936, 'test_recall': 0.8528002643317363, 'test_runtime': 1393.3884, 'test_samples_per_second': 17.362, 'test_steps_per_second': 1.737}
+d2 = {'test_loss': 0.4339987635612488, 'test_accuracy': 0.8438081071030122, 'test_f1': 0.8484848484848484, 'test_precision': 0.828752642706131, 'test_recall': 0.8691796008869179, 'test_runtime': 155.6353, 'test_samples_per_second': 17.278, 'test_steps_per_second': 1.728}
+d3 = {'test_loss': 0.4493945240974426, 'test_accuracy': 0.8336123200535654, 'test_f1': 0.8350481247925656, 'test_precision': 0.8179453836150845, 'test_recall': 0.8528813559322034, 'test_runtime': 172.8313, 'test_samples_per_second': 17.283, 'test_steps_per_second': 1.73}
 
 df1 = pd.DataFrame.from_dict(d1, orient='index', columns=['train']).T
 df2 = pd.DataFrame.from_dict(d1, orient='index', columns=['validation']).T
