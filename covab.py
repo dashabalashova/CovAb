@@ -21,9 +21,13 @@ st.title('Predictive profiling of SARS-CoV-2 variants by Transformer Neural Netw
 #                   [df_test.shape[0], df_test.Label.mean().round(3)]], index = ['train', 'validation', 'test'], \
 #                  columns = ['count', 'ratio'])
 
+df5 = pd.DataFrame([[24192, 0.5], [2689, 0.503], \
+                   [2987, 0.494]], index = ['train', 'validation', 'test'], \
+                  columns = ['count', 'ratio'])
+
 st.subheader('Data')
 st.text('(Taft et al., 2021)')
-#st.write(df5)
+st.write(df5)
 
 
 #########################
