@@ -47,8 +47,8 @@ d2 = {'test_loss': 0.4339987635612488, 'test_accuracy': 0.8438081071030122, 'tes
 d3 = {'test_loss': 0.4493945240974426, 'test_accuracy': 0.8336123200535654, 'test_f1': 0.8350481247925656, 'test_precision': 0.8179453836150845, 'test_recall': 0.8528813559322034, 'test_runtime': 172.8313, 'test_samples_per_second': 17.283, 'test_steps_per_second': 1.73}
 
 df1 = pd.DataFrame.from_dict(d1, orient='index', columns=['train']).T
-df2 = pd.DataFrame.from_dict(d1, orient='index', columns=['validation']).T
-df3 = pd.DataFrame.from_dict(d1, orient='index', columns=['test']).T
+df2 = pd.DataFrame.from_dict(d2, orient='index', columns=['validation']).T
+df3 = pd.DataFrame.from_dict(d3, orient='index', columns=['test']).T
 
 df4 = df1.append(df2).append(df3)[['test_accuracy', 'test_f1', 'test_precision', 'test_recall']]
 df4.columns = ['accuracy', 'f1', 'precision', 'recall']
