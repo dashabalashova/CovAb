@@ -2,28 +2,28 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-!pip install sklearn
-from sklearn.model_selection import train_test_split
+#!pip install sklearn
+#from sklearn.model_selection import train_test_split
 
 st.title('Predictive profiling of SARS-CoV-2 variants by Transformer Neural Network')
 
 
-df = pd.read_csv('data/LY16_train_data.csv')
-df_train, df_val = train_test_split(df, test_size=0.1, random_state=18)
-df_test = pd.read_csv('data/LY16_test_data.csv')
+#df = pd.read_csv('data/LY16_train_data.csv')
+#df_train, df_val = train_test_split(df, test_size=0.1, random_state=18)
+#df_test = pd.read_csv('data/LY16_test_data.csv')
 
 
 #print(df_train.shape[0], df_train.Label.mean().round(3))
 #print(df_val.shape[0], df_val.Label.mean().round(3))
 #print(df_test.shape[0], df_test.Label.mean().round(3))
 
-df5 = pd.DataFrame([[df_train.shape[0], df_train.Label.mean().round(3)], [df_val.shape[0], df_val.Label.mean().round(3)], \
-                   [df_test.shape[0], df_test.Label.mean().round(3)]], index = ['train', 'validation', 'test'], \
-                  columns = ['count', 'ratio'])
+#df5 = pd.DataFrame([[df_train.shape[0], df_train.Label.mean().round(3)], [df_val.shape[0], df_val.Label.mean().round(3)], \
+#                   [df_test.shape[0], df_test.Label.mean().round(3)]], index = ['train', 'validation', 'test'], \
+#                  columns = ['count', 'ratio'])
 
 st.subheader('Data')
 st.text('(Taft et al., 2021)')
-st.write(df5)
+#st.write(df5)
 
 
 #########################
