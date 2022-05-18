@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+
+!pip install sklearn
 from sklearn.model_selection import train_test_split
 
 st.title('Predictive profiling of SARS-CoV-2 variants by Transformer Neural Network')
